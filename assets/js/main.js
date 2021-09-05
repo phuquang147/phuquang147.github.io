@@ -5,7 +5,9 @@ const userBox = $('.header__user');
 const optionBtnList = $$('.post__option-btn');
 const homeBtn = $('.header__home .header__icon');
 const commentBtnList = $$('.post__comment');
-
+const darkModeBtn = $('.header__dark-mode');
+const mainPage = $('html');
+console.log(mainPage);
 // Get parent element 
 function getParent(element, selector) {
     while (element.parentElement) {
@@ -84,4 +86,12 @@ for (const commentBtn of commentBtnList) {
         const commentBox = parent.querySelector('.post__comment-box');
         commentBox.classList.toggle('active');
     }
+}
+
+// Toggle dark mode
+darkModeBtn.onclick = function() {
+    if (mainPage.hasAttribute('data-theme'))
+        mainPage.removeAttribute('data-theme');
+    else
+        mainPage.setAttribute('data-theme', 'dark');
 }
