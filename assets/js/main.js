@@ -7,7 +7,7 @@ const homeBtn = $('.header__home .header__icon');
 const commentBtnList = $$('.post__comment');
 const darkModeBtn = $('.header__dark-mode');
 const mainPage = $('html');
-console.log(mainPage);
+
 // Get parent element 
 function getParent(element, selector) {
     while (element.parentElement) {
@@ -89,9 +89,21 @@ for (const commentBtn of commentBtnList) {
 }
 
 // Toggle dark mode
+const moonIcon = darkModeBtn.querySelector('.moon');
+const sunIcon = darkModeBtn.querySelector('.sun');
+moonIcon.style.display = 'none';
+
 darkModeBtn.onclick = function() {
-    if (mainPage.hasAttribute('data-theme'))
+    
+ 
+    if (mainPage.hasAttribute('data-theme')) {
         mainPage.removeAttribute('data-theme');
-    else
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+    }
+    else {
         mainPage.setAttribute('data-theme', 'dark');
+        moonIcon.style.display = 'block';
+        sunIcon.style.display = 'none';
+    }
 }
