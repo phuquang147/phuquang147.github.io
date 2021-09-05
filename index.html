@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Social Network</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/img/icon.png"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <img src="./assets/img/icon.png" alt="" class="header__logo">
+            <div class="header__search">
+                <input type="text" placeholder="Search here ..." name="" id="" class="header__search-input">
+                <div class="header__search-btn"><i class='bx bx-search header__search-icon'></i></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header__home">
+                <a href="#">
+                    <i class='bx bx-home-alt header__icon active' ></i>
+                </a>
+            </div>
+            <div class="header__friend-request">
+                <i class='bx bx-user header__icon'></i>
+                <div class="header__box">
+                    <p class="header__box-heading">Friend Request</p>
+                    <ul class="header__box-list">
+                        <li class="header__box-item friend">
+                            <div class="header__box-friend-wrapper">
+                                <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                                <div class="header__box-friend-info">
+                                    <div class="header__box-item-heading friend">Phu Quang</div>
+                                    <div class="header__box-item-description">4 in mutual friends</div>
+                                </div>
+                            </div>
+                            <div class="header__box-friend-action">
+                                <div class="header__box-friend-btn header__box-friend-accept"><i class='bx bx-plus' ></i></div>
+                                <div class="header__box-friend-btn header__box-friend-reject"><i class='bx bx-minus'></i></div>
+                            </div>
+                        </li>
+                        <li class="header__box-item friend">
+                            <div class="header__box-friend-wrapper">
+                                <img src="./assets/img/avatar2.png" alt="" class="header__box-img">
+                                <div class="header__box-friend-info">
+                                    <div class="header__box-item-heading friend">Phu Quang</div>
+                                    <div class="header__box-item-description">4 in mutual friends</div>
+                                </div>
+                            </div>
+                            <div class="header__box-friend-action">
+                                <div class="header__box-friend-btn header__box-friend-accept"><i class='bx bx-plus' ></i></div>
+                                <div class="header__box-friend-btn header__box-friend-reject"><i class='bx bx-minus'></i></div>
+                            </div>
+                        </li>
+                        <li class="header__box-item friend">
+                            <div class="header__box-friend-wrapper">
+                                <img src="./assets/img/avatar3.png" alt="" class="header__box-img">
+                                <div class="header__box-friend-info">
+                                    <div class="header__box-item-heading friend">Phu Quang</div>
+                                    <div class="header__box-item-description">4 in mutual friends</div>
+                                </div>
+                            </div>
+                            <div class="header__box-friend-action">
+                                <div class="header__box-friend-btn header__box-friend-accept"><i class='bx bx-plus' ></i></div>
+                                <div class="header__box-friend-btn header__box-friend-reject"><i class='bx bx-minus'></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__box-btn">View All Friend Request</div>
+                </div>
+            </div>
+            <div class="header__message">
+                <i class='bx bx-message-square header__icon' ></i>
+                <div class="header__box">
+                    <p class="header__box-heading">Messages</p>
+                    <ul class="header__box-list">
+                        <li class="header__box-item active">
+                            <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                            <div class="header__box-info">
+                                <div class="header__box-header">
+                                    <p class="header__box-item-heading">Phu Quang</p>
+                                    <p class="header__box-item-description">15 mins ago</p>
+                                </div>
+                                <p class="header__box-item-content">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo animi amet
+                                </p>
+                            </div>
+                        </li>
+                        <li class="header__box-item">
+                            <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                            <div class="header__box-info">
+                                <div class="header__box-header">
+                                    <p class="header__box-item-heading">Phu Quang</p>
+                                    <p class="header__box-item-description">15 mins ago</p>
+                                </div>
+                                <p class="header__box-item-content">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo animi amet
+                                </p>
+                            </div>
+                        </li>
+                        <li class="header__box-item active">
+                            <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                            <div class="header__box-info">
+                                <div class="header__box-header">
+                                    <p class="header__box-item-heading">Phu Quang</p>
+                                    <p class="header__box-item-description">15 mins ago</p>
+                                </div>
+                                <p class="header__box-item-content">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo animi amet
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__box-btn">View All Messages</div>
+                </div>
+            </div>
+            <div class="header__notification">
+                <i class='bx bx-notification header__icon' ></i>
+                <div class="header__box">
+                    <p class="header__box-heading">Notifications</p>
+                    <ul class="header__box-list">
+                        <li class="header__box-item active">
+                            <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                            <div class="header__box-info">
+                                <div class="header__box-header">
+                                    <p class="header__box-item-heading">Phu Quang</p>
+                                    <p class="header__box-item-description">15 mins ago</p>
+                                </div>
+                                <p class="header__box-item-content">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo animi amet
+                                </p>
+                            </div>
+                        </li>
+                        <li class="header__box-item">
+                            <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                            <div class="header__box-info">
+                                <div class="header__box-header">
+                                    <p class="header__box-item-heading">Phu Quang</p>
+                                    <p class="header__box-item-description">15 mins ago</p>
+                                </div>
+                                <p class="header__box-item-content">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo animi amet
+                                </p>
+                            </div>
+                        </li>
+                        <li class="header__box-item active">
+                            <img src="./assets/img/avatar1.png" alt="" class="header__box-img">
+                            <div class="header__box-info">
+                                <div class="header__box-header">
+                                    <p class="header__box-item-heading">Phu Quang</p>
+                                    <p class="header__box-item-description">15 mins ago</p>
+                                </div>
+                                <p class="header__box-item-content">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo animi amet
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__box-btn">View All Notifications</div>
+                </div>
+            </div>
+            <div class="header__user">
+                <img src="./assets/img/avatar.jpg" alt="" class="header__user-img">
+                <h1 class="header__user-name">Phu Quang</h1>
+                <div class="header__box">
+                    <p class="header__box-heading">Hi Quang</p>
+                    <ul class="header__box-list">
+                        <li class="header__box-item user">
+                            <i class='bx bxs-user-detail header__box-user-icon'></i>
+                            <div class="header__box-user-body">
+                                <p class="header__box-item-heading">My Profile</p>
+                                <p class="header__box-item-description">View personal profile details</p>
+                            </div>
+                        </li>
+                        <li class="header__box-item user">
+                            <i class='bx bx-edit-alt header__box-user-icon' ></i>
+                            <div class="header__box-user-body">
+                                <p class="header__box-item-heading">Edit Profile</p>
+                                <p class="header__box-item-description">Modify your personal details</p>
+                            </div>
+                        </li>
+                        <li class="header__box-item user">
+                            <i class='bx bx-cog header__box-user-icon' ></i>
+                            <div class="header__box-user-body">
+                                <p class="header__box-item-heading">Account Settings</p>
+                                <p class="header__box-item-description">Manage your account parameters</p>
+                            </div>
+                        </li>
+                        <li class="header__box-item user">
+                            <i class='bx bx-slider header__box-user-icon' ></i>
+                            <div class="header__box-user-body">
+                                <p class="header__box-item-heading">Privacy Settings</p>
+                                <p class="header__box-item-description">Control your privacy parameters</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__box-btn">Sign Out</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col col-left">
+            <div class="section new-feed">
+                <h4 class="section__heading">New Feeds</h4>
+                <ul class="new-feed__list">
+                    <li class="new-feed__item">
+                        <i class='bx bx-tv new-feed__item-icon'></i>
+                        <p class="new-feed__item-name">Newfeeds</p>
+                    </li>
+                    <li class="new-feed__item">
+                        <i class='bx bx-video new-feed__item-icon' ></i>
+                        <p class="new-feed__item-name">Explore Stories</p>
+                    </li>
+                    <li class="new-feed__item">
+                        <i class='bx bx-group new-feed__item-icon' ></i>
+                        <p class="new-feed__item-name">Popular Groups</p>
+                    </li>
+                    <li class="new-feed__item">
+                        <i class='bx bx-user new-feed__item-icon' ></i>
+                        <p class="new-feed__item-name">Author Profile</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="section more">
+                <h4 class="section__heading">More Pages</h4>
+                <ul class="more__list">
+                    <li class="more__item">
+                        <i class='bx bxs-inbox more__item-icon' ></i>
+                        <p class="more__item-name">Email Box</p>
+                    </li>
+                    <li class="more__item">
+                        <i class='bx bx-hotel more__item-icon' ></i>
+                        <p class="more__item-name">Near Hotel</p>
+                    </li>
+                    <li class="more__item">
+                        <i class='bx bx-calendar-event more__item-icon' ></i>
+                        <p class="more__item-name">Latest Event</p>
+                    </li>
+                    <li class="more__item">
+                        <i class='bx bx-video-recording more__item-icon' ></i>
+                        <p class="more__item-name">Live Stream</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col col-main-left">
+            <div class="section new-post">
+                <div class="new-post__header">
+                    <i class='bx bx-pencil new-post__header-icon' ></i>
+                    <h4 class="section__heading">Create Post</h4>
+                </div>
+                <textarea class="new-post__input" name="paragraph_text" placeholder="What's on your mind?"></textarea>
+                <div class="new-post__footer">
+                    <div class="new-post__attach">
+                            <div class="new-post__attach-item">
+                                <i class='bx bx-video new-post__attach-icon live-video' ></i>
+                                <h4 class="new-post__attach-type">Live Video</h4>
+                            </div>
+                            <div class="new-post__attach-item">
+                                <i class='bx bx-photo-album new-post__attach-icon photo' ></i>
+                                <h4 class="new-post__attach-type">Photo/Video</h4>
+                            </div>
+                            <div class="new-post__attach-item">
+                                <i class='bx bx-camera new-post__attach-icon feeling' ></i>
+                                <h4 class="new-post__attach-type">Feeling/Activity</h4>
+                            </div>
+                    </div>
+                    <div class="new-post__submit">Post</div>
+                </div>
+            </div>
+            <ul class="post-list">
+                <li class="section post">
+                    <div class="post__header">
+                        <div class="post__info-wrapper">
+                            <img src="./assets/img/avatar1.png" alt="" class="post__author-img">
+                            <div class="post__info">
+                                <h4 class="post__author-name">Phu Quang</h4>
+                                <p class="post__description">22 min ago</p>
+                            </div>
+                        </div>
+                        <div class="post__option">
+                            <div class="post__option-btn">
+                                <i class='bx bx-dots-horizontal-rounded post__option-icon'></i>
+                            </div>
+                            <ul class="section post__option-box">
+                                <li class="post__option-item">
+                                    <i class='bx bx-bookmark post__option-icon'></i>
+                                    <div class="post__option-content">
+                                        <h4 class="post__option-heading">Save Post</h4>
+                                        <h5 class="post__option-description">Add this to your saved items</h5>
+                                    </div>
+                                </li>
+                                <li class="post__option-item">
+                                    <i class='bx bx-x-circle post__option-icon'></i>
+                                    <div class="post__option-content">
+                                        <h4 class="post__option-heading">Hide Post</h4>
+                                        <h5 class="post__option-description">Hide This Post</h5>
+                                    </div>
+                                </li>
+                                <li class="post__option-item">
+                                    <i class='bx bx-lock-alt post__option-icon' ></i>
+                                    <div class="post__option-content">
+                                        <h4 class="post__option-heading">Unfollow</h4>
+                                        <h5 class="post__option-description">Unfollow this author</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="post__body">
+                        <div class="post__content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aliquam, totam placeat, veritatis voluptatum neque tenetur ut amet velit, officiis a at praesentium quis explicabo dignissimos quos similique illum provident!
+                        </div>
+                        <img src="./assets/img/photo.jpg" alt="" class="post__img">
+                    </div>
+                    <div class="post__footer">
+                        <div class="post__footer-info">
+                            <div class="post__reaction">
+                                <div class="post__reaction-icon-list">
+                                    <img src="./assets/img/like.png" alt="" class="post__reaction-icon">
+                                    <img src="./assets/img/heart.png" alt="" class="post__reaction-icon">
+                                    <img src="./assets/img/haha.png" alt="" class="post__reaction-icon">
+                                </div>
+                                <h4 class="post__reaction-count">14</h4>
+                            </div>
+                            <div class="post__comment-share">
+                                <h4 class="post__comment-count">2 Comments</h4>
+                                <h4 class="post__share-count">5 Share</h4>
+                            </div>
+                        </div>
+                        <div class="post__action">
+                            <div class="post__react">
+                                <div class="post__btn react">
+                                    <i class='bx bx-like post__btn-icon'></i>
+                                    React!
+                                </div>
+                                <div class="post__react-list">
+                                    <img src="./assets/img/like.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/heart.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/haha.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/wow.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/sad.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/angry.png" alt="" class="post__react-item">  
+                                </div>
+                            </div>
+                            <div class="post__comment">
+                                <div class="post__btn comment">
+                                    <i class='bx bx-comment post__btn-icon' ></i>
+                                    Comment
+                                </div>
+                            </div>
+                            <div class="post__share">
+                                <div class="post__btn share">
+                                    <i class='bx bx-share-alt post__btn-icon' ></i>
+                                    Share
+                                </div> 
+                                <div class="post__share-list">
+                                    <i class='bx bxl-facebook post__share-item facebook'></i>
+                                    <i class='bx bxl-messenger post__share-item messenger' ></i>
+                                    <i class='bx bxl-instagram post__share-item instagram' ></i>
+                                    <i class='bx bxl-whatsapp post__share-item whatsapp' ></i>    
+                                    <i class='bx bxl-twitter post__share-item twitter' ></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__comment-box">
+                            <img src="./assets/img/avatar.jpg" alt="" class="post__comment-img">
+                            <input type="text" name="" id="" class="post__comment-input" placeholder="Enter your comment">
+                            <div class="post__comment-submit">
+                                <i class='bx bx-send post__comment-submit-icon'></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="section post">
+                    <div class="post__header">
+                        <div class="post__info-wrapper">
+                            <img src="./assets/img/avatar1.png" alt="" class="post__author-img">
+                            <div class="post__info">
+                                <h4 class="post__author-name">Phu Quang</h4>
+                                <p class="post__description">22 min ago</p>
+                            </div>
+                        </div>
+                        <div class="post__option">
+                            <div class="post__option-btn">
+                                <i class='bx bx-dots-horizontal-rounded post__option-icon'></i>
+                            </div>
+                            <ul class="section post__option-box">
+                                <li class="post__option-item">
+                                    <i class='bx bx-bookmark post__option-icon'></i>
+                                    <div class="post__option-content">
+                                        <h4 class="post__option-heading">Save Post</h4>
+                                        <h5 class="post__option-description">Add this to your saved items</h5>
+                                    </div>
+                                </li>
+                                <li class="post__option-item">
+                                    <i class='bx bx-x-circle post__option-icon'></i>
+                                    <div class="post__option-content">
+                                        <h4 class="post__option-heading">Hide Post</h4>
+                                        <h5 class="post__option-description">Hide This Post</h5>
+                                    </div>
+                                </li>
+                                <li class="post__option-item">
+                                    <i class='bx bx-lock-alt post__option-icon' ></i>
+                                    <div class="post__option-content">
+                                        <h4 class="post__option-heading">Unfollow</h4>
+                                        <h5 class="post__option-description">Unfollow this author</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="post__body">
+                        <div class="post__content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aliquam, totam placeat, veritatis voluptatum neque tenetur ut amet velit, officiis a at praesentium quis explicabo dignissimos quos similique illum provident!
+                        </div>
+                        <video controls src="./assets/img/video.mp4" class="post__video"></video>
+                    </div>
+                    <div class="post__footer">
+                        <div class="post__footer-info">
+                            <div class="post__reaction">
+                                <div class="post__reaction-icon-list">
+                                    <img src="./assets/img/like.png" alt="" class="post__reaction-icon">
+                                    <img src="./assets/img/heart.png" alt="" class="post__reaction-icon">
+                                    <img src="./assets/img/haha.png" alt="" class="post__reaction-icon">
+                                </div>
+                                <h4 class="post__reaction-count">14</h4>
+                            </div>
+                            <div class="post__comment-share">
+                                <h4 class="post__comment-count">2 Comments</h4>
+                                <h4 class="post__share-count">5 Share</h4>
+                            </div>
+                        </div>
+                        <div class="post__action">
+                            <div class="post__react">
+                                <div class="post__btn react">
+                                    <i class='bx bx-like post__btn-icon'></i>
+                                    React!
+                                </div>
+                                <div class="post__react-list">
+                                    <img src="./assets/img/like.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/heart.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/haha.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/wow.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/sad.png" alt="" class="post__react-item">
+                                    <img src="./assets/img/angry.png" alt="" class="post__react-item">  
+                                </div>
+                            </div>
+                            <div class="post__comment">
+                                <div class="post__btn comment">
+                                    <i class='bx bx-comment post__btn-icon' ></i>
+                                    Comment
+                                </div>
+                            </div>
+                            <div class="post__share">
+                                <div class="post__btn share">
+                                    <i class='bx bx-share-alt post__btn-icon' ></i>
+                                    Share
+                                </div> 
+                                <div class="post__share-list">
+                                    <i class='bx bxl-facebook post__share-item facebook'></i>
+                                    <i class='bx bxl-messenger post__share-item messenger' ></i>
+                                    <i class='bx bxl-instagram post__share-item instagram' ></i>
+                                    <i class='bx bxl-whatsapp post__share-item whatsapp' ></i>    
+                                    <i class='bx bxl-twitter post__share-item twitter' ></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__comment-box">
+                            <img src="./assets/img/avatar.jpg" alt="" class="post__comment-img">
+                            <input type="text" name="" id="" class="post__comment-input" placeholder="Enter your comment">
+                            <div class="post__comment-submit">
+                                <i class='bx bx-send post__comment-submit-icon'></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="section post__load-more">Load More Posts</div>
+        </div>
+        <div class="col col-main-right">
+            <div class="section story">
+                <h4 class="section__heading">Story</h4>
+                <ul class="story__list">
+                    <li class="story__item story__item--create">
+                        <i class='bx bx-plus story__item-icon' ></i>
+                        <div class="story__item-info">
+                            <h4 class="story__item-heading">Create Your Story</h4>
+                            <div class="story__item-description">Time to story</div>
+                        </div>
+                    </li>
+                    <div class="story__item active">
+                        <img src="./assets/img/avatar1.png" alt="" class="story__item-img">
+                        <div class="story__item-info">
+                            <h4 class="story__item-heading">Phu Quang</h4>
+                            <div class="story__item-description">1 hour ago</div>
+                        </div>
+                    </div>
+                    <div class="story__item">
+                        <img src="./assets/img/avatar2.png" alt="" class="story__item-img">
+                        <div class="story__item-info">
+                            <h4 class="story__item-heading">Phu Quang</h4>
+                            <div class="story__item-description">1 hour ago</div>
+                        </div>
+                    </div>
+                    <div class="story__item">
+                        <img src="./assets/img/avatar3.png" alt="" class="story__item-img">
+                        <div class="story__item-info">
+                            <h4 class="story__item-heading">Phu Quang</h4>
+                            <div class="story__item-description">1 hour ago</div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="story__create-btn">See All</div>
+            </div>
+            <div class="section birthday">
+                <h4 class="section__heading">Upcoming Birthday</h4>
+                <ul class="friend__list">
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar1.png" alt="" class="friend__item-img">
+                        </div>
+                        <div class="friend__item-info">
+                            <h4 class="friend__item-name">Phu Quang</h4>
+                            <h5 class="friend__item-description">Today</h5>
+                        </div>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar2.png" alt="" class="friend__item-img">
+                        </div>
+                        <div class="friend__item-info">
+                            <h4 class="friend__item-name">Phu Quang</h4>
+                            <h5 class="friend__item-description">Tomorrow</h5>
+                        </div>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar3.png" alt="" class="friend__item-img">
+                        </div>
+                        <div class="friend__item-info">
+                            <h4 class="friend__item-name">Phu Quang</h4>
+                            <h5 class="friend__item-description">Next Month</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section suggest-pages">
+                <h4 class="section__heading">Suggest Pages</h4>
+                <ul class="page__list">
+                    <li class="page__item">
+                        <img src="./assets/img/photo2.png" alt="" class="page__item-img">
+                        <div class="page__item-btn">
+                            <i class='bx bx-like page__item-icon'></i>
+                            Like Page
+                        </div>
+                    </li>
+                    <li class="page__item">
+                        <img src="./assets/img/photo.jpg" alt="" class="page__item-img">
+                        <div class="page__item-btn">
+                            <i class='bx bx-like page__item-icon'></i>
+                            Like Page
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col col-right">
+            <div class="section friend">
+                <h4 class="section__heading">Online Friend</h4>
+                <ul class="friend__list">
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar1.png" alt="" class="friend__item-img">
+                            <div class="is-online"></div>
+                        </div>
+                        <h4 class="friend__item-name">Phu Quang</h4>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar2.png" alt="" class="friend__item-img">
+                            <div class="is-online"></div>
+                        </div>
+                        <h4 class="friend__item-name">Phu Quang</h4>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar3.png" alt="" class="friend__item-img">
+                            <div class="is-online"></div>
+                        </div>
+                        <h4 class="friend__item-name">Phu Quang</h4>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar1.png" alt="" class="friend__item-img">
+                            <div class="is-online"></div>
+                        </div>
+                        <h4 class="friend__item-name">Phu Quang</h4>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar2.png" alt="" class="friend__item-img">
+                            <div class="is-online"></div>
+                        </div>
+                        <h4 class="friend__item-name">Phu Quang</h4>
+                    </li>
+                    <li class="friend__item">
+                        <div class="friend__item-avatar">
+                            <img src="./assets/img/avatar3.png" alt="" class="friend__item-img">
+                            <div class="is-online"></div>
+                        </div>
+                        <h4 class="friend__item-name">Phu Quang</h4>
+                    </li>
+                </ul>
+                <div class="friend__all">All Friend</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="particles-js">
+            <p class="footer__info">Made by Q</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
